@@ -1,0 +1,7 @@
+<h1><%= @song.title %></h1>
+
+<h2>Written by: <%= link_to @song.artist_name, artist_path(@song.artist) %></h2>
+
+<%= link_to "Edit Song", edit_song_path(@song) %>
+<br>
+<%= link_to "Go Back", songs_path %>
